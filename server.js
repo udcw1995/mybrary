@@ -18,7 +18,7 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({limit: '10mb', extended: false}))
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://udcw:udcw@mybrary.6vftonh.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://udcw:udcw@mybrary.g68h9f1.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', error => console.error(error))
